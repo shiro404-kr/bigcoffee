@@ -10,9 +10,9 @@ $(function() {
     });
 
 
-    let num = 0;
+    let num = 1;
     let slider = setInterval(function(){
-        if(num >= 2) { num == 0}
+        if(num > 2) { num == 0; }
         
         $('.slider > img').removeClass('show');
 
@@ -20,7 +20,7 @@ $(function() {
 
         console.log(num)
         num++;
-    }, 3000);
+    }, 5000);
 
 
 
