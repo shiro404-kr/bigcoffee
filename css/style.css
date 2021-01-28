@@ -165,7 +165,7 @@ body {
     background: #fff;
     left: 0; top: 0;
     z-index: 999;
-    box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.2);
     display: none;
 
 }
@@ -192,9 +192,21 @@ body {
 
 }
 
+.slider {
+    width: 100%;
+    height: calc(100vh - 68px);
+    position: relative;
 
-
-
+}
+.slider > img {
+    position: absolute;
+    left: 0; top: 0;
+    opacity: 0;
+    transition-duration: 1s;
+}
+.slider > img.show {
+    opacity: 1;
+}
 
 
 
